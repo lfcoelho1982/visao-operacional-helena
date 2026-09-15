@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Operacional Trimestral - Helena dos Santos Melo | Estácio ATP Manaus</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .slide-content { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Barra Superior Executiva -->
+    <header class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex justify-between items-center shadow-lg">
+        <div class="flex items-center gap-3">
+            <div class="bg-blue-600 text-white p-2.5 rounded-lg shadow-md">
+                <i class="fa-solid fa-chart-pie text-xl"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold tracking-wide text-white">Visão Operacional Trimestral</h1>
+                <p class="text-xs text-slate-400">Atendente: <span class="text-blue-400 font-semibold">Helena dos Santos Melo</span> | Unidade: <span class="text-slate-200">Estácio ATP Manaus</span></p>
+            </div>
+        </div>
+        
+        <!-- Indicador de Slide -->
+        <div class="bg-slate-700/80 border border-slate-600 px-4 py-1.5 rounded-full text-xs font-semibold text-slate-300">
+            Tela <span id="current-slide-num" class="text-blue-400 font-bold text-sm">1</span> de <span id="total-slides-num" class="font-bold">5</span>
+        </div>
+    </header>
+
+    <!-- ÁREA DE CONTEÚDO (SLIDES) -->
+    <main class="container mx-auto px-6 py-8 flex-grow max-w-6xl">
+
+        <!-- TELA 1: RESUMO EXECUTIVO E CONTEXTO OPERACIONAL -->
+        <section id="slide-1" class="slide-content space-y-6">
+            <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
+                <div>
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tela 01</span>
+                    <h2 class="text-2xl font-bold text-white mt-1">Resumo Executivo & Indicadores Globais (Jun - Ago)</h2>
+                </div>
+                <span class="bg-slate-700 text-slate-300 border border-slate-600 px-3 py-1 rounded-full text-xs font-semibold">
+                    <i class="fa-solid fa-scale-balanced mr-1 text-blue-400"></i> Avaliação Integrada: Performance & Conduta
+                </span>
+            </div>
+
+            <!-- KPIs Principais -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-md">
+                    <p class="text-slate-400 text-xs font-medium uppercase">Total Recuperado</p>
+                    <h3 class="text-2xl font-extrabold text-emerald-400 mt-1">R$ 615.108,99</h3>
+                    <p class="text-xs text-slate-400 mt-1">Acumulado em 3 meses</p>
+                </div>
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-md">
+                    <p class="text-slate-400 text-xs font-medium uppercase">Crescimento de Arrecadação</p>
+                    <h3 class="text-2xl font-extrabold text-blue-400 mt-1">+266,2%</h3>
+                    <p class="text-xs text-emerald-400 mt-1"><i class="fa-solid fa-arrow-trend-up"></i> De R$ 93k (Jun) a R$ 343k (Ago)</p>
+                </div>
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-md">
+                    <p class="text-slate-400 text-xs font-medium uppercase">Efetividade Financeira</p>
+                    <h3 class="text-2xl font-extrabold text-purple-400 mt-1">85,2%</h3>
+                    <p class="text-xs text-slate-400 mt-1">R$ 615k pagos / R$ 722k acordados</p>
+                </div>
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 shadow-md">
+                    <p class="text-slate-400 text-xs font-medium uppercase">Posição no Ranking</p>
+                    <h3 class="text-2xl font-extrabold text-amber-400 mt-1">Top 4 (4º Lugar)</h3>
+                    <p class="text-xs text-slate-400 mt-1">Consolidação na equipe ATP</p>
+                </div>
+            </div>
+
+            <!-- Card de Contexto e Objetivo -->
+            <div class="bg-slate-800/90 p-6 rounded-xl border border-slate-700 shadow-md space-y-3">
+                <h3 class="text-base font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-compass text-blue-400"></i> Objetivo da Apresentação
+                </h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Apresentar uma análise objetiva do desempenho operacional da colaboradora <strong>Helena dos Santos Melo</strong> na unidade <strong>Estácio ATP Manaus</strong>. Este relatório busca contrapor a excelente performance de arrecadação financeira aos pontos atitudinais e comportamentais sinalizados pela Gestão da Unidade, fornecendo dados concretos para balizar a tomada de decisão da liderança.
+                </p>
+            </div>
+        </section>
+
+        <!-- TELA 2: EVOLUÇÃO MÊS A MÊS & TABELA DE DADOS -->
+        <section id="slide-2" class="slide-content hidden space-y-6">
+            <div class="border-b border-slate-700 pb-3">
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tela 02</span>
+                <h2 class="text-2xl font-bold text-white mt-1">Evolução Histórica do Desempenho (Junho a Agosto)</h2>
+            </div>
+
+            <!-- Tabela Comparativa Detalhada -->
+            <div class="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden shadow-md">
+                <table class="w-full text-left text-sm text-slate-300">
+                    <thead class="bg-slate-700 text-slate-200 uppercase text-xs font-semibold">
+                        <tr>
+                            <th class="py-3.5 px-6">Mês</th>
+                            <th class="py-3.5 px-6">Acionados</th>
+                            <th class="py-3.5 px-6">Acordos</th>
+                            <th class="py-3.5 px-6">Pagos</th>
+                            <th class="py-3.5 px-6">Valor Acordado (R$)</th>
+                            <th class="py-3.5 px-6">Valor Recuperado (R$)</th>
+                            <th class="py-3.5 px-6">Efetividade $</th>
+                            <th class="py-3.5 px-6">Ranking</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr class="hover:bg-slate-750">
+                            <td class="py-4 px-6 font-bold text-white">Junho</td>
+                            <td class="py-4 px-6">223</td>
+                            <td class="py-4 px-6">178</td>
+                            <td class="py-4 px-6">155</td>
+                            <td class="py-4 px-6 text-slate-400">R$ 112.735,26</td>
+                            <td class="py-4 px-6 font-semibold text-slate-100">R$ 93.871,43</td>
+                            <td class="py-4 px-6 text-emerald-400 font-semibold">83,27%</td>
+                            <td class="py-4 px-6"><span class="bg-slate-700 text-slate-300 px-2.5 py-1 rounded-full text-xs font-bold">5º</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-750">
+                            <td class="py-4 px-6 font-bold text-white">Julho</td>
+                            <td class="py-4 px-6">257</td>
+                            <td class="py-4 px-6">199</td>
+                            <td class="py-4 px-6">167</td>
+                            <td class="py-4 px-6 text-slate-400">R$ 206.334,26</td>
+                            <td class="py-4 px-6 font-semibold text-slate-100">R$ 177.443,39</td>
+                            <td class="py-4 px-6 text-emerald-400 font-semibold">86,00%</td>
+                            <td class="py-4 px-6"><span class="bg-slate-700 text-slate-300 px-2.5 py-1 rounded-full text-xs font-bold">7º</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-750 bg-blue-950/20">
+                            <td class="py-4 px-6 font-bold text-blue-400">Agosto</td>
+                            <td class="py-4 px-6 font-bold">273</td>
+                            <td class="py-4 px-6 font-bold">239</td>
+                            <td class="py-4 px-6 font-bold">201</td>
+                            <td class="py-4 px-6 text-slate-300">R$ 402.953,07</td>
+                            <td class="py-4 px-6 font-extrabold text-emerald-400">R$ 343.794,17</td>
+                            <td class="py-4 px-6 text-emerald-400 font-bold">84,10%</td>
+                            <td class="py-4 px-6"><span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2.5 py-1 rounded-full text-xs font-bold">4º</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Resumo quantitativo -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                    <h4 class="font-bold text-slate-200 text-sm mb-1"><i class="fa-solid fa-sliders text-blue-400 mr-2"></i>Volume Acumulado da Operadora</h4>
+                    <p class="text-xs text-slate-400">Total de 753 alunos acionados, gerando 616 acordos firmados e 523 títulos efetivamente liquidados no trimestre.</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                    <h4 class="font-bold text-slate-200 text-sm mb-1"><i class="fa-solid fa-circle-nodes text-purple-400 mr-2"></i>Estrutura de Supervisão</h4>
+                    <p class="text-xs text-slate-400">Atuação sob supervisão de Nei Jacson Silva Vinhas, mantendo alinhamento constante com a carteira ATP da instituição.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA 3: ROBUSTEZ DE KPIS OPERACIONAIS -->
+        <section id="slide-3" class="slide-content hidden space-y-6">
+            <div class="border-b border-slate-700 pb-3">
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tela 03</span>
+                <h2 class="text-2xl font-bold text-white mt-1">Métricas Avançadas & Robustez Operacional</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <!-- KPI 1 -->
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <span class="text-xs font-semibold text-slate-400 uppercase">Taxa de Conversão</span>
+                    <h3 class="text-2xl font-extrabold text-blue-400">87,5%</h3>
+                    <p class="text-xs text-slate-400">Subiu de 79,8% (Jun) para 87,5% (Ago) em acionamentos negociados.</p>
+                </div>
+
+                <!-- KPI 2 -->
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <span class="text-xs font-semibold text-slate-400 uppercase">Adesão de Pagamento</span>
+                    <h3 class="text-2xl font-extrabold text-emerald-400">85,0%</h3>
+                    <p class="text-xs text-slate-400">Proporção de acordos fechados que resultaram em pagamento real.</p>
+                </div>
+
+                <!-- KPI 3 -->
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <span class="text-xs font-semibold text-slate-400 uppercase">Ticket Médio Arrecadado</span>
+                    <h3 class="text-2xl font-extrabold text-purple-400">R$ 1.710,42</h3>
+                    <p class="text-xs text-slate-400">Elevação contínua do valor unitário por título recuperado em Agosto.</p>
+                </div>
+
+                <!-- KPI 4 -->
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-2">
+                    <span class="text-xs font-semibold text-slate-400 uppercase">Índice de Retenção de Caixa</span>
+                    <h3 class="text-2xl font-extrabold text-amber-400 font-mono">85,2%</h3>
+                    <p class="text-xs text-slate-400">Conversão financeira líquida sobre promessas de pagamento.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                <h4 class="font-bold text-white text-sm mb-2"><i class="fa-solid fa-chart-line text-emerald-400 mr-2"></i>Análise Visual do Desempenho Operacional</h4>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Os dados confirmam que a colaboradora atingiu maturidade técnica na negociação de dívidas, demonstrando capacidade de recuperar carteiras de maior ticket sem comprometer o índice de conversão. Matematicamente, Helena é hoje uma das operadoras mais eficientes da estrutura ATP Manaus.
+                </p>
+            </div>
+        </section>
+
+        <!-- TELA 4: MAPA DE ALINHAMENTO E COMPORTAMENTO -->
+        <section id="slide-4" class="slide-content hidden space-y-6">
+            <div class="border-b border-slate-700 pb-3">
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tela 04</span>
+                <h2 class="text-2xl font-bold text-white mt-1">Pontos de Atenção & Gestão Atitudinal</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Bloco: Apontamentos da Gestão -->
+                <div class="bg-amber-950/20 border border-amber-800/40 p-6 rounded-xl space-y-4">
+                    <div class="flex items-center gap-2 text-amber-400 font-bold">
+                        <i class="fa-solid fa-triangle-exclamation text-lg"></i>
+                        <h3 class="text-base">Apontamentos da Gestão da Unidade</h3>
+                    </div>
+                    <ul class="space-y-3 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5"></i>
+                            <span><strong>Desvios de Padrão Comportamental:</strong> Quebra pontual de rotinas e procedimentos operacionais padronizados da unidade.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5"></i>
+                            <span><strong>Impacto no Clima da Equipe:</strong> Postura com influência direta na colega de operação e na dinâmica da secretaria da Estácio.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5"></i>
+                            <span><strong>Insatisfação Local:</strong> Solicitação formal de desligamento/substituição enviada pela Gestora da Unidade Manaus.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bloco: Ação de Supervisão e Alinhamento -->
+                <div class="bg-blue-950/20 border border-blue-800/40 p-6 rounded-xl space-y-4">
+                    <div class="flex items-center gap-2 text-blue-400 font-bold">
+                        <i class="fa-solid fa-comments text-lg"></i>
+                        <h3 class="text-base">Ação Preventiva de Supervisão</h3>
+                    </div>
+                    <ul class="space-y-3 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check-double text-blue-400 mt-0.5"></i>
+                            <span><strong>Feedback Formal Aplicado:</strong> O Supervisor Nei Jacson pontuou diretamente com a colaboradora todas as divergências relatadas.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check-double text-blue-400 mt-0.5"></i>
+                            <span><strong>Ciência dos Pontos Críticos:</strong> Helena foi formalmente orientada sobre a necessidade imediata de ajuste atitudinal.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check-double text-blue-400 mt-0.5"></i>
+                            <span><strong>Reconhecimento sem Invalidação:</strong> A análise operacional valida a gravidade do relato da gestora, buscando entender a viabilidade de correção.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA 5: CENÁRIOS E RECOMENDAÇÃO ESTRATÉGICA -->
+        <section id="slide-5" class="slide-content hidden space-y-6">
+            <div class="border-b border-slate-700 pb-3">
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tela 05</span>
+                <h2 class="text-2xl font-bold text-white mt-1">Cenários de Decisão & Encaminhamento</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Opção A -->
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-3">
+                    <span class="text-xs font-bold text-rose-400 uppercase tracking-wider">Cenário A • Desligamento Imediato</span>
+                    <h4 class="font-bold text-white text-base">Atendimento Pleno à Gestão Local</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Elimina o ruído relacional na unidade, porém acarreta a perda imediata de R$ 343k/mês em arrecadação e exige curva de maturação de 60 a 90 dias para um novo operador atingir a mesma produtividade.
+                    </p>
+                </div>
+
+                <!-- Opção B -->
+                <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 space-y-3">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Cenário B • Manutenção sob Monitoramento</span>
+                    <h4 class="font-bold text-white text-base">Permanência Condicionada a Ajustes</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Preserva o volume financeiro recuperado e concede oportunidade de continuidade, desde que haja total adequação comportamental comprovada pela Gestora nos próximos 30 dias.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recomendação Final -->
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 space-y-3">
+                <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-handshake text-blue-400"></i> Proposta de Encaminhamento Conciliatório
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Caso seja do interesse da diretoria e havendo respaldo do Supervisor <strong>Nei Jacson</strong> quanto ao alinhamento pós-feedback, propõe-se um <strong>Plano de Acompanhamento Assistido (30 dias)</strong>. Caso a postura da colaboradora tenha sido efetivamente corrigida junto à secretaria e equipe, a operação mantém os excelentes resultados financeiros sem prejuízo ao clima organizacional.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Controles de Navegação (Barra Inferior Executiva) -->
+    <footer class="bg-slate-800 border-t border-slate-700 px-8 py-4 flex justify-between items-center">
+        <button id="prev-btn" onclick="changeSlide(-1)" class="bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold px-5 py-2 rounded-lg transition-all text-sm disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2">
+            <i class="fa-solid fa-chevron-left"></i> Anterior
+        </button>
+        
+        <!-- PONTOS DE NAVEGAÇÃO -->
+        <div class="flex gap-2.5" id="dots-container">
+            <span class="w-3 h-3 rounded-full bg-blue-500 cursor-pointer" onclick="goToSlide(1)"></span>
+            <span class="w-3 h-3 rounded-full bg-slate-600 cursor-pointer" onclick="goToSlide(2)"></span>
+            <span class="w-3 h-3 rounded-full bg-slate-600 cursor-pointer" onclick="goToSlide(3)"></span>
+            <span class="w-3 h-3 rounded-full bg-slate-600 cursor-pointer" onclick="goToSlide(4)"></span>
+            <span class="w-3 h-3 rounded-full bg-slate-600 cursor-pointer" onclick="goToSlide(5)"></span>
+        </div>
+
+        <button id="next-btn" onclick="changeSlide(1)" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded-lg transition-all text-sm shadow-md flex items-center gap-2">
+            Próximo <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT DE TROCA DE TELAS -->
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        function updateSlide() {
+            // Oculta todas as telas
+            for (let i = 1; i <= totalSlides; i++) {
+                const el = document.getElementById(`slide-${i}`);
+                if (el) el.classList.add('hidden');
+            }
+            
+            // Exibe a tela atual
+            const currentEl = document.getElementById(`slide-${currentSlide}`);
+            if (currentEl) currentEl.classList.remove('hidden');
+
+            // Atualiza numeração do cabeçalho
+            document.getElementById('current-slide-num').innerText = currentSlide;
+            document.getElementById('total-slides-num').innerText = totalSlides;
+
+            // Atualiza botões
+            document.getElementById('prev-btn').disabled = (currentSlide === 1);
+            
+            const nextBtn = document.getElementById('next-btn');
+            if (currentSlide === totalSlides) {
+                nextBtn.innerHTML = 'Concluir Apresentação <i class="fa-solid fa-check ml-1"></i>';
+                nextBtn.classList.remove('bg-blue-600', 'hover:bg-blue-500');
+                nextBtn.classList.add('bg-emerald-600', 'hover:bg-emerald-500');
+            } else {
+                nextBtn.innerHTML = 'Próximo <i class="fa-solid fa-chevron-right ml-1"></i>';
+                nextBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-500');
+                nextBtn.classList.add('bg-blue-600', 'hover:bg-blue-500');
+            }
+
+            // Atualiza indicadores visuais (dots)
+            const dots = document.getElementById('dots-container').children;
+            for (let i = 0; i < dots.length; i++) {
+                if (i === currentSlide - 1) {
+                    dots[i].className = 'w-3 h-3 rounded-full bg-blue-500 cursor-pointer transition-all scale-110';
+                } else {
+                    dots[i].className = 'w-3 h-3 rounded-full bg-slate-600 cursor-pointer hover:bg-slate-500 transition-all';
+                }
+            }
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 1) currentSlide = 1;
+            if (currentSlide > totalSlides) currentSlide = totalSlides;
+            updateSlide();
+        }
+
+        function goToSlide(slideNum) {
+            currentSlide = slideNum;
+            updateSlide();
+        }
+
+        // Navegação pelas setas do teclado (Esquerda / Direita)
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') changeSlide(1);
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+        });
+
+        // Inicialização
+        updateSlide();
+    </script>
+</body>
+</html>
