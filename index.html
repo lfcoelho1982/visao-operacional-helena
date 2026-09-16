@@ -32,6 +32,17 @@
         </div>
     </header>
 
+    <!-- Barra de Navegação Superior -->
+    <div class="bg-slate-800/95 border-b border-slate-700 px-6 py-2.5 flex justify-center items-center gap-3 sticky top-0 z-20 shadow-md">
+        <button id="top-prev-btn" onclick="changeSlide(-1)" class="bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold px-4 py-1.5 rounded-lg transition-all text-xs disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5">
+            <i class="fa-solid fa-chevron-left"></i> Anterior
+        </button>
+        <span class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Navegação</span>
+        <button id="top-next-btn" onclick="changeSlide(1)" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-1.5 rounded-lg transition-all text-xs shadow flex items-center gap-1.5">
+            Próximo <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
     <!-- ÁREA DE CONTEÚDO (SLIDES) -->
     <main class="container mx-auto px-6 py-8 flex-grow max-w-6xl">
 
@@ -374,16 +385,20 @@
 
             // Atualiza botões
             document.getElementById('prev-btn').disabled = (currentSlide === 1);
-            
-            const nextBtn = document.getElementById('next-btn');
-            if (currentSlide === totalSlides) {
-                nextBtn.innerHTML = 'Concluir Apresentação <i class="fa-solid fa-check ml-1"></i>';
-                nextBtn.classList.remove('bg-blue-600', 'hover:bg-blue-500');
-                nextBtn.classList.add('bg-emerald-600', 'hover:bg-emerald-500');
-            } else {
-                nextBtn.innerHTML = 'Próximo <i class="fa-solid fa-chevron-right ml-1"></i>';
-                nextBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-500');
-                nextBtn.classList.add('bg-blue-600', 'hover:bg-blue-500');
+            document.getElementById('top-prev-btn').disabled = (currentSlide === 1);
+
+            const nextButtons = [document.getElementById('next-btn'), document.getElementById('top-next-btn')];
+            for (const nextBtn of nextButtons) {
+                nextBtn.innerHTML = (currentSlide === totalSlides)
+                    ? 'Concluir Apresentação <i class="fa-solid fa-check ml-1"></i>'
+                    : 'Próximo <i class="fa-solid fa-chevron-right ml-1"></i>';
+                if (currentSlide === totalSlides) {
+                    nextBtn.classList.remove('bg-blue-600', 'hover:bg-blue-500');
+                    nextBtn.classList.add('bg-emerald-600', 'hover:bg-emerald-500');
+                } else {
+                    nextBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-500');
+                    nextBtn.classList.add('bg-blue-600', 'hover:bg-blue-500');
+                }
             }
 
             // Atualiza indicadores visuais (dots)
